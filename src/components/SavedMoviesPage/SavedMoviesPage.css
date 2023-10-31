@@ -1,0 +1,12 @@
+
+.movies-saved__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 38px;
+    border-top: 1px solid #424242;
+    padding: 80px 0 0 0;
+    margin-top: 70px;
+    list-style-type: none;
+}
