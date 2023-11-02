@@ -21,11 +21,11 @@ export default function Profile() {
                     <form className="profile__form" name="profile" noValidate>
                         <div className="profile__form-container">
                             <label className="profile__form-label">Имя</label>
-                            <input className="profile__form-input"name="name" type="text" minLength={3} maxLength={30} onClick={() => setInputChange(!inputChange)} onSubmit={handleChange} required/>
+                            <input className="profile__form-input" name="name" type="text" placeholder="Имя" minLength={3} maxLength={30} onClick={() => setInputChange(!inputChange)} onSubmit={handleChange} required/>
                         </div>
                         <div className="profile__form-container">
                             <label className="profile__form-label">E-mail</label>
-                            <input className="profile__form-input" name="email" type="email" value={"pochta@yandex.ru"} required/>
+                            <input className="profile__form-input" name="email" type="email" placeholder="Электронная почта" minLength={8} maxLength={20} required/>
                         </div>
                     </form>
                     { inputChange ? (
@@ -37,7 +37,7 @@ export default function Profile() {
                         ) : (
                             <div className="profile__actions">
                                 <button className="profile__change-button" type="button" >Редактировать</button>
-                                <Link to="/signin" className="profile__logout">Выйти из аккаунта</Link>
+                                <Link to="/" className="profile__logout">Выйти из аккаунта</Link>
                             </div>
                         )
                     }

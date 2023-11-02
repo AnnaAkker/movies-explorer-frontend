@@ -5,7 +5,7 @@
 
 .portfolio__text {
     color: #8B8B8B;
-    font-family: Inter;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -33,6 +33,7 @@
 .portfolio__link {
     display: flex;
     justify-content: space-between;
+    font-family: 'Inter', Arial, sans-serif;
     color: #fff;
     font-size: 30px;
     font-style: normal;
@@ -50,6 +51,7 @@
 
 .portfolio__button {
     text-align: left;
+    font-family: 'Inter', Arial, sans-serif;
     align-items: center;
     font-size: 30px;
     font-style: normal;

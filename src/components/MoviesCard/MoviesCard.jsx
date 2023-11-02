@@ -15,19 +15,19 @@ const MoviesCard = () => {
   return (
     
     <li className="movies-card">
-        <img className="movies-cards__card" src={require(`../../images/pic_1.png`)} alt="заставка"/>
-        <div className="movies-cards__container">
-            <div className="movie-card__description">
-                <h2 className="movie-card__name">33 слова о дизайне</h2>
+        <img className="movies-card__poster" src={require(`../../images/pic_1.png`)} alt="Постер"/>
+        <div className="movies-card__container">
+            <div className="movies-card__description">
+                <h2 className="movies-card__name">33 слова о дизайне</h2>
 
                 {pathname === '/movies' ? (
                   
-                    <button type="button" className={`movies-cards__button ${active ? 'movies-cards__button_like' : ''}`} onClick={handleClick}/>
+                    <button type="button" className={`movies-card__button ${active ? 'movies-cards__button_like' : ''}`} onClick={handleClick}/>
                 ) : (
-                    <button type="button" className="movies-cards__button_unlike"/>
+                    <button type="button" className="movies-card__button-unlike"/>
                 )}
             </div>
-        <span className="card__time">1ч 42м</span>
+        <span className="movies-card__time">1ч 42м</span>
         </div>
     </li>
   )

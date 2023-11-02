@@ -1,5 +1,6 @@
 .search-form {
     width: 100%;
+
 }
 
 .search-form__container {
@@ -7,7 +8,7 @@
     grid-template-columns: 5fr 1fr;
 }
 
-.search-form__form {
+.search-form__label {
     min-height: 72px;
     display: flex;
     align-items: center;
@@ -16,7 +17,7 @@
     border-radius: 9px 0px 0px 9px;
 }
 
-.search-form__form::after{
+.search-form__label::after {
     display: block;
     content: '';
     width: 1px;
@@ -41,6 +42,7 @@
 .search-form__input {
     width: 70%;
     border: none;
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.11;
@@ -59,6 +61,24 @@
 
 }
 
+.search-form__checkbox-container {
+    display: flex;
+    background: #2F2F2F;
+    border-radius: 0px 9px 9px 0px;
+    gap: 6px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.searchform__checkbox-text {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
 @media screen and (max-width: 1200px) {
     .search-form__input {
         width: 70%;
@@ -68,7 +88,7 @@
 
 @media screen and (max-width: 930px) {
 
-    .search-form__form::after {
+    .search-form__label::after {
         margin-right: 18px;
     }
 
@@ -80,11 +100,15 @@
     .search-form__button {
         margin-right: 0;
     }
+
+    .search-form__checkbox-container {
+        padding-right: 21px;
+    }
 }
 
 @media screen and (max-width: 740px) {
 
-    .search-form__form::after {
+    .search-form__label::after {
         display: none;
     }
 
@@ -101,14 +125,14 @@
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 670px) {
 
     .search-form__container {
         display: flex;
         flex-direction: column;
     }
 
-    .search-form__form {
+    .search-form__label {
         border-radius: 9px;
     }
 
@@ -117,6 +141,17 @@
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
+    }
+
+    .search-form__checkbox-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: transparent;
+        border-radius: 0;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
 
@@ -134,6 +169,16 @@
 
     .search-form__button {
         margin-right: 20px;
+    }
+
+    .search-form__checkbox-container {
+        margin-top: 36px;
+    }
+
+    .searchform__checkbox-text {
+        font-size: 11px;
+        line-height: 18px;
+        margin-left: 8px;
     }
 
 }

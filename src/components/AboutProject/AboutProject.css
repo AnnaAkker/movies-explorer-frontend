@@ -5,7 +5,7 @@
 }
 
 .project__title {
-    font-family: Inter;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -30,7 +30,7 @@
 
 
 .project__subtitle {
-    font-family: Inter;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +41,7 @@
 }
 
 .project__paragraph{
-    font-family: Inter;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -59,6 +59,7 @@
 }
 
 .project__diagram-text {
+    font-family: 'Inter', Arial, sans-serif;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
@@ -78,6 +79,7 @@
 }
 
 .project__diagram-description {
+    font-family: 'Inter', Arial, sans-serif;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
@@ -115,16 +117,9 @@
     }
 
     .project__diagram {
+        grid-template-columns: calc(238/1140*100%) 1fr;
         row-gap: 14px;
         margin: 57px auto 85px;
-    }
-
-    .project__diagram-text {
-        padding-left: 6px;
-    }
-
-    .project__diagram-description {
-        padding-left: 7px;
     }
 }
 

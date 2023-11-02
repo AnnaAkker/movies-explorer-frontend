@@ -2,7 +2,7 @@ import './AboutProject.css';
 
 export default function AboutProject() {
     return (
-        <section className="project" id="project">
+        <section className="project">
             <h2 className="project__title">О проекте</h2>
             <div className="project__line"></div>
             <div className="project__description">

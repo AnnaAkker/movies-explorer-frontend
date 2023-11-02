@@ -4,7 +4,7 @@ import "./MoviesCardList.css"
 
 const MoviesCardList = () => {
 
-    const movie = [ 'pic_1.png',  'pic_1.png',  'pic_1.png',  'pic_1.png',  'pic_1.png' ]
+    const movie = [ 'pic_1.svg',  'pic_1.svg',  'pic_1.svg',  'pic_1.svg',  'pic_1.svg' ]
 
     return (
 
@@ -15,7 +15,7 @@ const MoviesCardList = () => {
           ))}
         </ul>
         <div>
-      <button className="movies-list__more">Ещё</button>
+      <button type="button" className="movies-list__more">Ещё</button>
   </div>
       </section>
     )

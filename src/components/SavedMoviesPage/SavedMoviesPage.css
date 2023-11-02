@@ -1,3 +1,6 @@
+.movies-saved {
+    padding-bottom: 43px;
+}
 
 .movies-saved__list {
     display: grid;
@@ -9,4 +12,45 @@
     padding: 80px 0 0 0;
     margin-top: 70px;
     list-style-type: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .movies-saved__list {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width:930px) {
+
+    .movies-saved {
+        padding-bottom: 40px;
+    }
+    
+    .movies-saved__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 29px;
+        row-gap: 31px;
+        margin-top: 109px;
+    }
+}
+
+@media screen and (max-width:670px) {
+
+    .movies-saved__list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    
+    .movies-saved__list {
+        gap: 33px;
+        margin-top: 34px;
+        padding-top: 50px;
+    }
+
 }

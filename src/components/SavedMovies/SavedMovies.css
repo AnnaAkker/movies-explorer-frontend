@@ -1,4 +1,18 @@
 .movies-saved {
     width: calc(100% - 2 * 70px);
-    margin: 70px auto 118px;
+    margin: 70px auto 115px;
+}
+
+@media (max-width: 970px) {
+    .movies-saved {
+        width: calc(100% - 2 * 30px);
+        margin: 80px auto 174px;
+    }
+}
+
+@media (max-width: 420px) {
+    .movies-saved {
+        width: calc(100% - 2 * 10px);
+        margin: 80px auto 118px;
+    }
 }

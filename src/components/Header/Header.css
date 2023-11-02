@@ -18,6 +18,10 @@
     align-self: center;
 }
 
+.header__logo:hover {
+    opacity: 0.6;
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -25,6 +29,7 @@
 }
 
 .header__auth {
+    font-family: 'Inter', Arial, sans-serif;
     color: #FFF;
     text-align: right;
     text-decoration: none;
@@ -35,13 +40,14 @@
     line-height: 16px;
 }
 
-.header__register:hover {
+.header__auth:hover {
     cursor: pointer;
     opacity: 0.6;
 }
 
 
 .header__login {
+    font-family: 'Inter', Arial, sans-serif;
     color: #000;
     font-size: 12px;
     font-style: normal;
@@ -65,7 +71,8 @@
     margin-left: 44px;
 }
 
-.header__movie {
+.header__link {
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -74,12 +81,12 @@
     text-decoration: none;
 }
 
-.header__films:hover {
+.header__link:hover {
     cursor: pointer;
     opacity: 0.6;
 }
 
-.header__movie_active {
+.header__link_active {
     border-bottom: 2px solid #424242;
     margin-bottom: -10px;
     padding-bottom: 8px;
@@ -121,13 +128,14 @@
 }
 
 @media (max-width: 970px) {
+
     .header {
         margin: 0;
         padding: 0 30px;
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 770px) {
 
     .header__logo {
        padding-top: 2px;
@@ -137,7 +145,7 @@
         padding: 0 30px;
     }
     
-    .header__container-films {
+    .header__container-movies {
         display: none;
     }
     

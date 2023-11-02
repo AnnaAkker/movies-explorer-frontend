@@ -1,9 +1,10 @@
 import './AboutMe.css'
+import photo from "../../images/me_pic.png"
 
 export default function AboutMe() {
 
     return (
-        <section className="about" id="about">
+        <section className="about">
             <h2 className="about__text">Студент</h2>
             <div className="about__line"></div>
             <div className="about__description">
@@ -18,7 +19,7 @@ export default function AboutMe() {
               начал заниматься фриланс-заказами и&nbsp;ушёл с&nbsp;постоянной работы.</p>
                     <a className="about__link" href="https://github.com/AnnaAkker" target="_blank" rel="noreferrer">Github</a>
                 </div>
-                <div className="about__pic"></div>
+                <img src={photo} alt="Автопортрет" className="about__pic"/>
             </div>
         </section>
     );

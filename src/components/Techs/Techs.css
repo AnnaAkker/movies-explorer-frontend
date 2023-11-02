@@ -4,6 +4,7 @@
 }
 
 .techs__title {
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -21,6 +22,7 @@
 
 .techs__subtitle {
     text-align: center;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
@@ -31,6 +33,7 @@
 
 .techs__paragrah {
     width: 460px;
+    font-family: 'Inter', Arial, sans-serif;
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -49,7 +52,7 @@
     list-style-type: none;
 }
 
-.techs__lists-object {
+.techs__list-object {
     width: 84px;
     height: 57px;
     display: flex;
@@ -61,7 +64,8 @@
     margin-left: 5px;
 }
 
-.techs__lists-object_text {
+.techs__list-object_text {
+    font-family: 'Inter', Arial, sans-serif;
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -84,14 +88,6 @@
         margin-top: 20px;
     }
 
-    .techs__subtitle {
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -1.2px;
-    }
-
     .techs__paragrah {
         width: 440px;
         font-size: 12px;
@@ -102,12 +98,12 @@
         padding: 0 0 88px;
     }
 
-    .techs__lists-object {
+    .techs__list-object {
         margin-right: 6px;
         margin-left: 6px;
       }
 
-    .techs__lists-object_text {
+    .techs__list-object_text {
         font-size: 12px;
         letter-spacing: -0.48px;
     }
@@ -156,6 +152,10 @@
     }
 
     .techs__subtitle {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1.2px;
         margin-top: 32px;
     }
 }
