@@ -1,6 +1,6 @@
 import { handleSendRequest } from "./utils";
 
-export const BASE_URL = 'api.domainname.diplomakk.nomoredomainsrocks.ru';
+export const BASE_URL = 'https://api.domainname.diplomakk.nomoredomainsrocks.ru';
 // export const BASE_URL = "http://localhost:3000";
 
 export const register = (name, email, password) => {
