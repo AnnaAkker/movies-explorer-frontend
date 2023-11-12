@@ -1,7 +1,7 @@
 import { handleSendRequest } from "./utils";
 
-export const BASE_URL = 'domainname.diplomakk.nomoredomainsmonster.ru';
-// export const BASE_URL = "http://localhost:3001";
+export const BASE_URL = 'api.domainname.diplomakk.nomoredomainsrocks.ru';
+// export const BASE_URL = "http://localhost:3000";
 
 export const register = (name, email, password) => {
   return fetch(`${BASE_URL}/signup`, {
